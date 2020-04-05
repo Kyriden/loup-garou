@@ -13,12 +13,15 @@ import DeadPage from './pages/DeadPage'
 import { MasterGameProvider } from './services/MasterGame';
 import { GameProvider } from './services/Game';
 import { UserProvider } from './services/User';
+import {ThemeProvider} from "styled-components";
+import Layout from "./components/Layout";
 
 
 function App() {
   return (
     <BrowserRouter>
     <UserProvider>
+      <Layout>
       <Route exact path="/" component={ StartPage } />
       <Route path="/end" component={ EndPage } />
       <Route path="/join" component={ CodePage } />
@@ -35,6 +38,7 @@ function App() {
         <Route path="/dead" component={ DeadPage } />
         <Route path="/spell" component={ SpellPage } />
       </GameProvider>
+      </Layout>
     </UserProvider>
     </BrowserRouter>
   );
