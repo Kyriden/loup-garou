@@ -238,7 +238,7 @@ Activer l'authentification anonyme dans la console de Firebase.
 
 - Combien de collections dans Firebase pouvez-vous identifier ? A quoi correspondent les `doc` ?
   - Deux collections sont présentes dans Firebase : game (représente les parties) et user (représente les utilisateurs).
-  <!-- - Un document dans Firebase représente une entrée dans la collection. Par exemple, un utilisateur représente un document   -->
+  - Un document dans Firebase représente une entrée dans la collection.
 
 
 ### Contribuer à l'application
@@ -252,4 +252,16 @@ Activer l'authentification anonyme dans la console de Firebase.
 ### Rapport
 
 Rédiger un court rapport -- inférieur à une page, expliquant les modifications apportées au projet. Motiver ses choix. Expliquer les difficultés rencontrées.
+
+##### Modifications :
+    - Ajout d'un design pour les boutons : couleur rouge sang (pour le thème du loup-garou), et couleur encore plus rouge au hover. Utilisation de styled-components.
+    - Ajout d'une image de fond.
+    - Design du formulaire : l'un en dessous de l'autre, bordure rouge sang, input plus grand. Utilisation de styled-components.
+    - Ajout d'un header et d'un footer basique au sein d'un seul composant 'Layout.js' qui est encapsulée dans 'App.js'.
+
+##### Difficultées rencontrées :
+    - Changement de PC dû à un bug : Github et React ne marchaient plus. 
+    - Comprendre comment marche Styled Components, et l'utiliser correctement.
+    - Quelques problèmes de compréhension au niveau de Firebase : tout n'est pas encore très clair dans mon esprit. 
+
 
